@@ -7,8 +7,9 @@ plugins {
 cup {
     targetDesktop()
 
-    // TODO: Uncomment this if you want to export your slides as a web page
-    //targetWeb()
+    // TODO: If you comment this (you don't want to export your presentation as a web page),
+    //  you must remove the .github/workflows/pages.yml file as well.
+    targetWeb()
 }
 
 kotlin {
@@ -20,11 +21,11 @@ kotlin {
             // TODO: Select plugins (comment or uncomment function of your needs)
 
             // Secondary window with preview & speaker notes.
-            implementation(cup.plugins.speakerWindow)
+            implementation(cup.plugin.speakerWindow)
 
             // Allows to draw over the presentation on the main window.
             // This tool is also part of the Speaker Mode window.
-            implementation(cup.plugins.laser)
+            implementation(cup.plugin.laser)
 
             // TODO: Select material or material3 (for composables such as Text).
             implementation(compose.material)

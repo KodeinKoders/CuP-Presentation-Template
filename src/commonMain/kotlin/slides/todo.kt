@@ -62,7 +62,7 @@ val todo by Slide(
 
     Text(
         styled(MyStyleSheet) { "There is ${+em}so much${-em} to do!" },
-        fontSize = 32.sp
+        style = MaterialTheme.typography.h2
     )
 
     BulletPoints {
@@ -86,7 +86,7 @@ val todo by Slide(
     ) {
         TextWithNotoAnimatedEmoji(
             text = "${Emoji.Sparkles} Start creating! ${Emoji.Sparkles}",
-            fontSize = 32.sp,
+            style = MaterialTheme.typography.h1,
             modifier = Modifier.padding(top = 16.dp)
         )
     }

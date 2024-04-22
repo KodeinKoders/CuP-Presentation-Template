@@ -9,6 +9,7 @@ import net.kodein.cup.Slides
 import net.kodein.cup.cupApplication
 import net.kodein.cup.laser.laser
 import net.kodein.cup.speaker.speakerMode
+import net.kodein.cup.ui.cupScaleDown
 import slides.intro
 import slides.todo
 
@@ -24,7 +25,8 @@ fun main() = cupApplication(
 
     MaterialTheme(
         // TODO: Apply your theme
-        colors = darkColors()
+        colors = darkColors(),
+        typography = MaterialTheme.typography.cupScaleDown()
     ) {
         Presentation(
             slides = presentationSlides,
@@ -34,11 +36,11 @@ fun main() = cupApplication(
                 laser()
             },
             backgroundColor = MaterialTheme.colors.background
-        ) {
+        ) { slidesContent ->
             CompositionLocalProvider(
                 LocalContentColor provides MaterialTheme.colors.onBackground
             ) {
-                Slides()
+                slidesContent()
             }
         }
     }

@@ -3,6 +3,7 @@ package slides
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -31,7 +32,7 @@ val intro by Slide {
 
     Text(
         text = "Hello, friend!",
-        fontSize = 32.sp
+        style = MaterialTheme.typography.h1
     )
     TextWithPlatformEmoji(styled { "Welcome to ${+b}Compose ur Pres${-b}! ${Emoji.Wink}" })
 }
