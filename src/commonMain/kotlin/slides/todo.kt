@@ -20,7 +20,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.em
-import androidx.compose.ui.unit.sp
 import net.kodein.cup.Slide
 import net.kodein.cup.ui.BulletPoints
 import net.kodein.cup.ui.SpanStyleSheet

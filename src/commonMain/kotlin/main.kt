@@ -3,13 +3,13 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.remember
-import org.kodein.emoji.compose.EmojiService
 import net.kodein.cup.Presentation
 import net.kodein.cup.Slides
 import net.kodein.cup.cupApplication
 import net.kodein.cup.laser.laser
-import net.kodein.cup.speaker.speakerMode
+import net.kodein.cup.speaker.speakerWindow
 import net.kodein.cup.ui.cupScaleDown
+import org.kodein.emoji.compose.EmojiService
 import slides.intro
 import slides.todo
 
@@ -32,7 +32,7 @@ fun main() = cupApplication(
             slides = presentationSlides,
             configuration = {
                 // TODO: Configure plugins
-                speakerMode()
+                speakerWindow()
                 laser()
             },
             backgroundColor = MaterialTheme.colors.background
