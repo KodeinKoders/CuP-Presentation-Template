@@ -1,6 +1,6 @@
 # CuP Template project
 
-This project is a template for a [Compose ur Pres](https://github.com/kosi-libs/CuP) project.
+This project is a template for a [Compose ur Pres](https://github.com/KodeinKoders/CuP) project.
 
 1. Edit [settings.gradle.kts](settings.gradle.kts):
     - Change the name of your project (which will define the package of the compose Res class).
