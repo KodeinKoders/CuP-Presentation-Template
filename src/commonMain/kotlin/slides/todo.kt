@@ -21,9 +21,9 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.em
 import net.kodein.cup.Slide
-import net.kodein.cup.ui.BulletPoints
 import net.kodein.cup.ui.SpanStyleSheet
 import net.kodein.cup.ui.styled
+import net.kodein.cup.widgets.material.BulletPoints
 import org.kodein.emoji.Emoji
 import org.kodein.emoji.activities.event.Sparkles
 import org.kodein.emoji.compose.m2.TextWithNotoAnimatedEmoji

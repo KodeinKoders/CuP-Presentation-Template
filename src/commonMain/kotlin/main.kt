@@ -8,7 +8,7 @@ import net.kodein.cup.Slides
 import net.kodein.cup.cupApplication
 import net.kodein.cup.laser.laser
 import net.kodein.cup.speaker.speakerWindow
-import net.kodein.cup.ui.cupScaleDown
+import net.kodein.cup.widgets.material.cupScaleDown
 import org.kodein.emoji.compose.EmojiService
 import slides.intro
 import slides.todo

@@ -1,7 +1,7 @@
 plugins {
     kotlin("multiplatform") version "1.9.23"
-    id("org.jetbrains.compose") version "1.6.1"
-    id("net.kodein.cup") version "1.0.0-Beta-01"
+    id("org.jetbrains.compose") version "1.6.2"
+    id("net.kodein.cup") version "1.0.0-Beta-02"
 }
 
 cup {
@@ -29,7 +29,10 @@ kotlin {
 
             // TODO: Select material or material3 (for composables such as Text).
             implementation(compose.material)
+            implementation(cup.widgets.material)
 //            implementation(compose.material3)
+//            implementation(cup.widgets.material3)
+
             implementation("org.kodein.emoji:emoji-compose-m2:1.3.0")
 //            implementation("org.kodein.emoji:emoji-compose-m3:1.3.0")
         }
