@@ -1,7 +1,8 @@
 plugins {
-    kotlin("multiplatform") version "1.9.23"
-    id("org.jetbrains.compose") version "1.6.2"
-    id("net.kodein.cup") version "1.0.0-Beta-02"
+    kotlin("multiplatform") version "2.0.0"
+    kotlin("plugin.compose") version "2.0.0"
+    id("org.jetbrains.compose") version "1.6.10"
+    id("net.kodein.cup") version "1.0.0-Beta-04"
 }
 
 cup {
@@ -33,8 +34,8 @@ kotlin {
 //            implementation(compose.material3)
 //            implementation(cup.widgets.material3)
 
-            implementation("org.kodein.emoji:emoji-compose-m2:1.3.0")
-//            implementation("org.kodein.emoji:emoji-compose-m3:1.3.0")
+            implementation("org.kodein.emoji:emoji-compose-m2:2.0.1")
+//            implementation("org.kodein.emoji:emoji-compose-m3:2.0.1")
         }
     }
 }
