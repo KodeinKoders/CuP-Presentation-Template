@@ -19,7 +19,6 @@ import org.kodein.emoji.compose.m2.TextWithPlatformEmoji
 import org.kodein.emoji.smileys_emotion.face_smiling.Wink
 
 
-@OptIn(ExperimentalResourceApi::class)
 val intro by Slide {
     Image(
         painterResource(Res.drawable.cup),
