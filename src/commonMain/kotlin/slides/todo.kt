@@ -8,8 +8,8 @@ import androidx.compose.animation.scaleIn
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Text
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.pointer.PointerIcon
@@ -23,10 +23,10 @@ import androidx.compose.ui.unit.em
 import net.kodein.cup.Slide
 import net.kodein.cup.ui.SpanStyleSheet
 import net.kodein.cup.ui.styled
-import net.kodein.cup.widgets.material.BulletPoints
+import net.kodein.cup.widgets.material3.BulletPoints
 import org.kodein.emoji.Emoji
 import org.kodein.emoji.activities.event.Sparkles
-import org.kodein.emoji.compose.m2.TextWithNotoAnimatedEmoji
+import org.kodein.emoji.compose.m3.TextWithNotoAnimatedEmoji
 
 
 object MyStyleSheet : SpanStyleSheet() {
@@ -44,7 +44,7 @@ private fun Link(
     val uriHandler = LocalUriHandler.current
     Text(
         text = text,
-        color = MaterialTheme.colors.primary,
+        color = MaterialTheme.colorScheme.primary,
         textDecoration = TextDecoration.Underline,
         modifier = Modifier
             .pointerHoverIcon(PointerIcon.Hand)
@@ -61,7 +61,7 @@ val todo by Slide(
 
     Text(
         styled(MyStyleSheet) { "There is ${+em}so much${-em} to do!" },
-        style = MaterialTheme.typography.h2
+        style = MaterialTheme.typography.headlineMedium
     )
 
     BulletPoints {
@@ -85,7 +85,7 @@ val todo by Slide(
     ) {
         TextWithNotoAnimatedEmoji(
             text = "${Emoji.Sparkles} Start creating! ${Emoji.Sparkles}",
-            style = MaterialTheme.typography.h1,
+            style = MaterialTheme.typography.headlineLarge,
             modifier = Modifier.padding(top = 16.dp)
         )
     }
