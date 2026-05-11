@@ -1,8 +1,8 @@
 [versions]
 compose = "1.10.3"                      # https://github.com/JetBrains/compose-multiplatform/releases
-cup = "1.0.0-Beta-13"                   # https://github.com/KodeinKoders/CuP/releases
-emoji = "2.3.0"                         # https://github.com/kosi-libs/Emoji.kt/releases
-kotlin = "2.3.20"                       # https://github.com/jetbrains/kotlin/releases
+cup = "1.0.0-Beta-15"                   # https://github.com/KodeinKoders/CuP/releases
+emoji = "2.4.0"                         # https://github.com/kosi-libs/Emoji.kt/releases
+kotlin = "2.3.21"                       # https://github.com/jetbrains/kotlin/releases
 material3 = "1.10.0-alpha05"            # https://github.com/JetBrains/compose-multiplatform/releases
 materialIcons = "1.7.3"                 # https://github.com/JetBrains/compose-multiplatform/releases
 

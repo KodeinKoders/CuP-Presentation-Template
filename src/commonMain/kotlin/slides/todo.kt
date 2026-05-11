@@ -65,16 +65,16 @@ val todo by Slide(
     )
 
     BulletPoints {
-        BulletPoint(visible = step >= 1) {
+        item(visible = step >= 1) {
             Row {
                 Text("Read ")
-                Link(text = "the documentation", url = "https://kosi-libs.github.io/CuP")
+                Link(text = "the documentation", url = "https://kodeinkoders.github.io/CuP")
             }
         }
-        BulletPoint(visible = step >= 2) {
+        item(visible = step >= 2) {
             Row {
                 Text("Explore ")
-                Link(text = "a demo presentation", url = "https://github.com/kosi-libs/CuP/tree/main/demo")
+                Link(text = "a demo presentation", url = "https://kodeinkoders.github.io/CuP/Demo")
             }
         }
     }
